@@ -1,17 +1,18 @@
-import React from 'react'; 
-import {View, TextInput} from 'react-native'
+import React, {Component} from 'react';
+import {SafeAreaView, Text} from 'react-native';
 
-class Profiles extends React.Component {
-  render() {
-    return(
-      <View>
-       <TextInput
-       placeholder={"Paris"}
-      />  
-      <Button color='red' title="Research city"/>
-      </View>
-    );
-  }
+class Profile extends Component {
+    render() {
+        return (
+            <SafeAreaView style={{
+                flex: 1,
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}>
+                <Text>Profile</Text>
+            </SafeAreaView>
+        );
+    }
 }
 
-export default Profiles
+export {Profile};
