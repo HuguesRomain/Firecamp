@@ -5,16 +5,16 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import {Home} from './components/Home'
 import {Profile} from './components/Profiles'
 import {AddButton} from './components/AddButton'
+
 const BaseNavigator = createBottomTabNavigator({
   Home: {
     screen: Home,
     navigationOptions: () => ({
-        tabBarIcon: ({tintColor}) => (
-            <Icon
-                name="home"
-                color={tintColor}
-                size={24}
-            />
+        tabBarLabel: '•', 
+        tabBarIcon: () => (
+            <Image source={require('./components/icons/home.png')} 
+                  style={{width: 27, height: 27,}} 
+                  />
           ),
       }),
   },
@@ -22,6 +22,7 @@ const BaseNavigator = createBottomTabNavigator({
   Adding: {
     screen: () => null, 
     navigationOptions: () => ({
+        tabBarLabel: ' ',
         tabBarIcon: <AddButton /> 
     })
   },
@@ -29,6 +30,7 @@ const BaseNavigator = createBottomTabNavigator({
   Profile: {
     screen: Profile, 
     navigationOptions: () => ({
+      tabBarLabel: '•',
       tabBarIcon: () => (
         <Image source={require('./components/icons/user.png')} style={{width: 24, height: 24,}}/>
       ), 
@@ -36,9 +38,10 @@ const BaseNavigator = createBottomTabNavigator({
   },
 }, {
   tabBarOptions: {
-    showLabel: false, 
-    activeTintColor: '#F8F8F8', 
-    inactiveTintColor: '#586589',
+    showLabel: true, 
+    labelStyle: {fontSize: 17, marginTop: -10,},
+    activeTintColor: 'black', 
+    inactiveTintColor: 'white',
     style: {
       backgroundColor: '#FFFFFF'
     }

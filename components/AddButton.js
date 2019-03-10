@@ -122,8 +122,8 @@ class AddButton extends Component {
                         justifyContent: 'center',
                         width: SIZE,
                         height: SIZE,
-                        borderRadius: SIZE / 2,
-                        backgroundColor: '#48A2F8'
+                        borderRadius: SIZE,
+                        backgroundColor: 'black'
                     }}
                 >
                     <Animated.View style={{

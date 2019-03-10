@@ -1,9 +1,9 @@
 {
-  "devToolsPort": 19002,
+  "devToolsPort": 19003,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 5586,
-  "expoServerNgrokUrl": "https://kx-dtc.anonymous.firecamp.exp.direct",
-  "packagerNgrokUrl": "https://packager.kx-dtc.anonymous.firecamp.exp.direct",
-  "ngrokPid": 5624
+  "packagerPort": 19004,
+  "packagerPid": 16088,
+  "expoServerNgrokUrl": "https://2y-6gc.anonymous.firecamp.exp.direct",
+  "packagerNgrokUrl": "https://packager.2y-6gc.anonymous.firecamp.exp.direct",
+  "ngrokPid": 16118
 }
