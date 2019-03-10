@@ -36,7 +36,7 @@ const BaseNavigator = createBottomTabNavigator({
       ), 
     }) 
   },
-}, {
+},  {
   tabBarOptions: {
     showLabel: true, 
     labelStyle: {fontSize: 17, marginTop: -10,},

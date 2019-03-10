@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Animated, TouchableHighlight, View} from "react-native";
-import Icon from '@expo/vector-icons/FontAwesome';
+import {TouchableHighlight, View, Image} from "react-native";
+import {LinearGradient} from 'expo'
+
 class AddButton extends Component {
 render() {
     return (
@@ -17,7 +18,9 @@ render() {
                 backgroundColor: 'black'
               	}}
                 >
-    		<Icon name="plus" size={24} color="white"/>
+				<Image
+        source={require('./icons/plus.png')} style={{width: 22, height: 21,}}
+      />
         </TouchableHighlight>
       </View>
         );
