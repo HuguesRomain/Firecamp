@@ -1,7 +1,13 @@
 import React, {Component} from 'react';
+import {createStackNavigator, createAppContainer} from 'react-navigation'
 import {SafeAreaView, Text} from 'react-native';
 
 class Profile extends Component {
+
+    static navigationOptions = {
+        title: "Profile", 
+      }
+      
     render() {
         return (
             <SafeAreaView style={{
@@ -15,4 +21,8 @@ class Profile extends Component {
     }
 }
 
-export default Profile;
+export default StackNavigationProfile = createStackNavigator({
+    Profile: {
+    screen: Profile,
+  },
+  })
