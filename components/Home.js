@@ -1,13 +1,21 @@
-import * as React from 'react';
-import {View, TouchableOpacity} from 'react-native';
+import React, {Component} from 'react';
+import {SafeAreaView, Text, View} from 'react-native';
+import {createStackNavigator, createAppContainer} from 'react-navigation'
+import Nav from '../BottomNav'
 
- export class Home extends React.Component {
-   render(){
-     return(
-       <View style={{ backgroundColor: '#FEFEFE'}}> 
-        
-       </View>  
-     );
-   }
- }
+class Home extends Component {
+    render() {
+        return (
+            <View style={{
+                flex: 1,
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}>
+                <Text>Home</Text>
+            </View>
+        );
+    }
+}
 
+
+export default Home;
