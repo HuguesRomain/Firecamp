@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {createStackNavigator, createAppContainer} from 'react-navigation'
 import {SafeAreaView, Text} from 'react-native';
+import Input from './Input'
 
 class Write extends Component {
 
   static navigationOptions = {
-    title: "Profile", 
+    title: "Write", 
   }
-
     render() {
         return (
             <SafeAreaView style={{
@@ -16,6 +16,7 @@ class Write extends Component {
                 justifyContent: 'center'
             }}>
                 <Text>Write</Text>
+                <Input placeholder='Input'/>
             </SafeAreaView>
         );
     }
